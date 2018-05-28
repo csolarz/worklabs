@@ -1,0 +1,40 @@
+{
+  "name": "worklabs-api",
+  "version": "1.0.0",
+  "description": "Basic template for RESTful API written in node.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "dev": "cross-env NODE_ENV=dev node ./server.js",
+    "debug": "cross-env NODE_ENV=debug nodemon --inspect ./server.js",
+    "test": "mocha"
+  },
+  "author": "WorkLabs",
+  "license": "ISC",
+  "dependencies": {
+    "async": "2.6.0",
+    "azure": "^2.2.1-preview",
+    "dotenv": "5.0.1",
+    "dotenv-safe": "5.0.1",
+    "fluent-validator": "1.1.0",
+    "lodash": "4.17.5",
+    "moment": "2.22.0",
+    "mssql": "4.1.0",
+    "node-env": "0.1.6",
+    "npm": "5.8.0",
+    "restify": "^7.1.1",
+    "restify-errors": "6.0.0",
+    "restify-router": "^0.5.0",
+    "validate": "4.2.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "cross-env": "5.1.4",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-xo-space": "0.18.0",
+    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-react": "7.7.0",
+    "mocha": "5.1.1",
+    "nodemon": "1.17.3"
+  }
+}
