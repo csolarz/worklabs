@@ -12,6 +12,6 @@ Dado el recurso persona, la siguiente URI provee las normas de acceso a extraer 
 
 URI | Method | Notas
 -----| ------- | -------------
-/persona | GET | Retorna una lista de personas, en el caso de tablas con mas de X registros se debe devolver una lista paginada con los primeros X registros, por defecto retorna todas las personas en estado vigente = "1"
+/persona | GET | Retorna una lista de la entidad persona, en el caso de tablas con mas de 100 registros se debe devolver una lista paginada con los primeros 100 registros, por defecto retorna todas las personas en estado vigente = "1".
 /persona/{key} | GET | Retorna todo el contenido de una persona dada una {key}.
-/persona/
+/persona?limit=25&offset=50 | GET | Retorna una lista de la entidad persona desde el registro 51 al 75, offset=50 significa: ‘saltarse los primeros 50 registros’, limit=25 significa: ‘retorna un máximo de 25 registros’ si limit es undefined debe asumirse el valor 100 por defecto
