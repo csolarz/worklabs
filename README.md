@@ -6,10 +6,10 @@ One Paragraph of project description goes here
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### REST Resources
+## REST Resources
 Dado el recurso persona, la siguiente URI provee las normas de acceso a extraer el recurso persona, nótese el uso de singular para el nombre del recurso 
 
-#### Extraccion de datos
+### Extraccion de datos
 
 URI | Method | Notas
 -----| ------- | -------------
@@ -19,7 +19,7 @@ URI | Method | Notas
 
 La extracción de datos debe realizarse siempre a través del método GET
 
-#### Insercción y actualización de datos
+### Insercción y actualización de datos
 
 URI | Method | Notas
 -----| ------- | -------------
@@ -28,10 +28,7 @@ URI | Method | Notas
 /persona/{id} | PUT | Registra una modificación de la entidad persona dada su identificador de recurso {id}.
 /persona/{id} | DELETE | Realiza la eliminación de la entidad persona dado su identificador de recurso {id}.
 
-La extracción de datos debe realizarse siempre a través del método GET
-
-
-#### Códigos de respuesta Http
+### Códigos de respuesta Http
 
 Status Code | Descriptcion
 ----------- | -------------
@@ -50,5 +47,3 @@ Status Code | Descriptcion
 429 Too Many Requests |
 500 Internal Server Error | Error inesperado en el servidor, generalmente indica que aunque el cliente aparentemente proporcionó una solicitud correcta, algo inesperado ha fallado en el servidor. Una respuesta 500 indica un defecto del software del lado del servidor o una interrupción del sitio. 500 NO DEBE utilizarse para la validación del cliente o el manejo de errores de negocio.
 503 Service Unavailable | 
-
-
